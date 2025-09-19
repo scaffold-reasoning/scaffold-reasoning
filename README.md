@@ -5,7 +5,7 @@
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](link-to-paper) -->
 
 This repository contains the **official implementation** of **Scaffold Reasoning** as described in our paper:  
-**"Dual-Pathway Scaffold Reasoning for Enhancing LLM Code Debugging"**  
+**"Dual-Process Scaffold Reasoning for Enhancing LLM Code Debugging"**  
 *Authors: po-chung hsieh, chin-po chen, jeng-lin lee, ming-ching chang*  
 <!-- (Conference/Journal, Year)   -->
 

@@ -1,0 +1,40 @@
+#torch>=2.6.0 --index-url https://download.pytorch.org/whl/cu121
+#torchvision --index-url https://download.pytorch.org/whl/cu121
+#torchaudio --index-url https://download.pytorch.org/whl/cu121
+torch
+torchvision
+torchaudio
+transformers
+accelerate
+bitsandbytes
+scipy
+
+together>=0.2.5
+tiktoken>=0.5.0
+python-dotenv>=1.0.0
+typing-extensions>=4.5.0
+flask>=2.0.0
+tqdm
+accelerate
+datasets >= 1.8.0
+sentencepiece != 0.1.92
+protobuf
+rouge-score
+nltk
+py7zr
+evaluate
+prettytable
+openai
+requests
+huggingface_hub
+
+#numpy<2.0
+matplotlib
+pydantic
+gym
+bs4
+beautifulsoup4
+python-leetcode
+spacy
+openpyxl
+
