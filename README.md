@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 Download model 
 ```python
-python download.py
+python download_model.py
 ```
 
 Run prediction
