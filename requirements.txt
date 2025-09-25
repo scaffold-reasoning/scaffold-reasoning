@@ -1,11 +1,20 @@
+#torch>=2.6.0 --index-url https://download.pytorch.org/whl/cu121
+#torchvision --index-url https://download.pytorch.org/whl/cu121
+#torchaudio --index-url https://download.pytorch.org/whl/cu121
+torch
+torchvision
+torchaudio
+transformers
+accelerate
+bitsandbytes
+scipy
+
 together>=0.2.5
 tiktoken>=0.5.0
 python-dotenv>=1.0.0
 typing-extensions>=4.5.0
 flask>=2.0.0
-PyMuPDF  # for PDF parsing 
 tqdm
-transformers >= 4.17.0.dev0
 accelerate
 datasets >= 1.8.0
 sentencepiece != 0.1.92
@@ -19,7 +28,7 @@ openai
 requests
 huggingface_hub
 
-numpy<2.0
+#numpy<2.0
 matplotlib
 pydantic
 gym
@@ -28,3 +37,4 @@ beautifulsoup4
 python-leetcode
 spacy
 openpyxl
+
