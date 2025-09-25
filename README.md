@@ -59,7 +59,7 @@ python download_model.py
 
 Run prediction
 ```python
-bash run_modelXprompt.sh --max-questions [NUMBER]
+bash run.sh --max-questions [NUMBER]
 ```
 
 
