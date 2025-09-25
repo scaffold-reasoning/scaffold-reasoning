@@ -1,10 +1,6 @@
-from typing import List, Optional, Iterator, Dict
-from openai import OpenAI
+# from typing import List, Optional, Iterator, Dict
 import os
 import requests
-import re
-import time
-from openai._exceptions import RateLimitError, APIError
 
 class SingleAgent:
     """Worker agent that processes individual chunks of text using Azure OpenAI."""

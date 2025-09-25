@@ -5,7 +5,7 @@ import os
 # 1. Hugging Face token
 # ---------------------------
 # Replace with your Hugging Face token
-HF_TOKEN = "your_huggingface_token_here"
+HF_TOKEN = "TOKEN"
 
 # Log in programmatically
 login(token=HF_TOKEN)

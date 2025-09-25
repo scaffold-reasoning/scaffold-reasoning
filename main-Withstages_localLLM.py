@@ -1,7 +1,7 @@
-from processes import CoAProcessRunner
+# from processes import CoAProcessRunner
+# from chain_of_agents import ChainOfAgents
 from chain_of_agents import ChainOfAgents
-from chain_of_agents import ChainOfAgents
-from chain_of_agents.debug_agents import SingleAgent, ReactAgent
+from chain_of_agents.debug_agents import SingleAgent
 import os
 from dotenv import load_dotenv
 import pathlib
@@ -441,9 +441,9 @@ if __name__ == "__main__":
     model_name = args.model_path
     output_dir = args.output_dir
     
-    # Prompts={
-    #     "SR"    : SR_prompt,     
-    # }
+    Prompts={
+        "SR"    : SR_prompt,     
+    }
 
     
     
@@ -461,18 +461,18 @@ if __name__ == "__main__":
         print("Error: At least one stage must be enabled. Use --run-stage1 or --run-stage2")
         exit(1)
     # Initialize Chain of Agents
-    """
-    coa = ChainOfAgents(
-        model="gpt-4.1-mini",
-        chunk_size=3000,
-        max_new_tokens=70000,
-        prompt  = Prompts[prompt],    
-    )
-    """
-
-    # ds = load_dataset("Rtian/DebugBench", split="test")
     
-    ds = load_from_disk("debugbench")
+    # coa = ChainOfAgents(
+    #     model="gpt-4.1-mini",
+    #     chunk_size=3000,
+    #     max_new_tokens=70000,
+    #     prompt  = Prompts[prompt],    
+    # )
+    
+
+    ds = load_dataset("Rtian/DebugBench", split="test")
+    
+    # ds = load_from_disk("debugbench")
     filtered_ds = ds.filter(lambda example: example["language"] == "python3" )
 
     print(f"setting args.max_questions to {args.max_questions}\n ")

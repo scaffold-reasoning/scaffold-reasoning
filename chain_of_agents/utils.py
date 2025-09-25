@@ -1,32 +1,11 @@
 from typing import List
 import logging
-import fitz  # PyMuPDF
 import tiktoken
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-def read_pdf(pdf_path: str) -> str:
-    """
-    Read text content from a PDF file.
-    
-    Args:
-        pdf_path: Path to the PDF file
-        
-    Returns:
-        str: Extracted text from the PDF
-    """
-    try:
-        text = []
-        with fitz.open(pdf_path) as doc:
-            logger.info(f"Processing PDF with {len(doc)} pages")
-            for page in doc:
-                text.append(page.get_text())
-        
-        return "\n".join(filter(None, text))  # Filter out empty strings
-    except Exception as e:
-        logger.error(f"Error reading PDF: {str(e)}")
-        raise
+
 
 
 def split_into_chunks(text: str, chunk_token_size: int, model_name: str) -> List[str]:
